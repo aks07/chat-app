@@ -1,0 +1,8 @@
+.chat-body{
+    width: 100%;
+}
+
+.chat-footer{
+    position: fixed;
+    bottom: 0;
+}

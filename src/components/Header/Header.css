@@ -1,0 +1,23 @@
+.header-body{
+    background-color: #222f3e!important;
+    text-align: center;
+    height: 8%;
+    width: 100%
+}
+
+.heading{
+    float: left;
+}
+
+.heading-icon{
+    float: left;
+}
+
+.heading-title{
+    font-size: 20px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-left: 20px;
+    float: right;
+}
