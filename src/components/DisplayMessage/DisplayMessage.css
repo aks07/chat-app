@@ -1,0 +1,25 @@
+.text-message{
+    margin: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+}
+
+.user-message{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bot-message{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.bot-message .text-message {
+    background-color: #f0f3f6;
+}
+
+.user-message .text-message {
+    background-color: #f9eab5;
+}

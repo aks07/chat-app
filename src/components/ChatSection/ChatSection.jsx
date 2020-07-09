@@ -24,7 +24,8 @@ class ChatSection extends React.Component {
     }
 
     postMessage = () => {
-        //ADD IF NO MSG CASE
+        if (this.state.inputValue.length === 0)
+            return
         this.updateMessageList(this.state.inputValue, true)
         this.onMessage(this.state.inputValue).then(value => {
             this.updateMessageList(value.data.botMessage, false)
@@ -55,8 +56,12 @@ class ChatSection extends React.Component {
                     })}
                 </div>
                 <div className="chat-footer">
-                    <input type="text" value={this.state.inputValue} placeholder="Type Message" onChange={this.updateInputValue} />
-                    <button type="submit" onClick={this.postMessage}>Send</button>
+                    <div className="input-box">
+                        <input type="text" value={this.state.inputValue} placeholder="Type Message" onChange={this.updateInputValue} />
+                    </div>
+                    <div className="button-box">
+                        <button type="submit" onClick={this.postMessage}>Send</button>
+                    </div>
                 </div>
             </div>
         )
