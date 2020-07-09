@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
 
-const Header = () => {
+const Header = ({changeTab, currentTab}) => {
     return (
         <div className="header-body">
             <div className="heading">
@@ -15,9 +15,9 @@ const Header = () => {
                 </div>
             </div>
             <div className="menu">
-                <button className="chat">CHAT</button>
-                <button className="my-job">MY JOB</button>
-                <button className="profile">PROFILE</button>
+                <button className="chat" id={currentTab === 0? 'focus': ''} onClick={() => changeTab(0)}>CHAT</button>
+                <button className="my-job" id={currentTab === 1? 'focus': ''} onClick={() => changeTab(1)}>MY JOB</button>
+                <button className="profile" id={currentTab === 2? 'focus': ''} onClick={() => changeTab(2)}>PROFILE</button>
             </div>
         </div>
     )

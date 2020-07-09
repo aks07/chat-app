@@ -41,7 +41,6 @@ class ChatSection extends React.Component {
     };
 
     render() {
-        // console.log(this.state.messageList)
         return (
             <div className="chat-body">
                 <div className="messages">
